@@ -35,7 +35,7 @@ module.exports = {
             .setTitle(account.full_name)
             .setURL(`https://instagram.com/${name}`)
             .setThumbnail(account.profile_pic_url_hd)
-            .addField("Profile information", stripIndents`**- Username:** ${account.username}
+            .addField("𝙋𝙧𝙤𝙛𝙞𝙡𝙚 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣", stripIndents`**- Username:** ${account.username}
             **- Full name:** ${account.full_name}
             **- Biography:** ${account.biography.length == 0 ? "none" : account.biography}
             **- Posts:** ${account.edge_owner_to_timeline_media.count}
