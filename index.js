@@ -22,14 +22,13 @@ config({
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: "me getting developed",
-            type: "STREAMING"
-        }
-    }); 
-});
+    client.user.setActivity(`Streaming First Class Gaming`, {
+        type: "STREAMING",
+        url: "https://www.twitch.tv/ninja"})
+            .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
+            .catch(console.error);
+        });
+
 
 client.on("message", async message => {
     const prefix = ".";
