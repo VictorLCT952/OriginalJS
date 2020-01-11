@@ -1,7 +1,6 @@
 const { Client, Collection } = require("discord.js");
 const { config } = require("dotenv");
 const fs = require("fs");
-const token = procces.env.arcadia
 
 const client = new Client({
     disableEveryone: true
