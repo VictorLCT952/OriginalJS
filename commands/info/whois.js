@@ -3,7 +3,7 @@ const { stripIndents } = require("common-tags");
 const { getMember, formatDate } = require("../../functions.js");
 
 module.exports = {
-    name: "whois",
+    name: "info",
     aliases: ["who", "user", "info"],
     description: "Returns user information",
     usage: "[username | id | mention]",
