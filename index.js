@@ -22,7 +22,7 @@ config({
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
-    client.user.setActivity(`First Class Gaming`, {
+    client.user.setActivity(`𝙁𝙤𝙧 𝙂𝙖𝙢𝙞𝙣𝙜`, {
         type: "STREAMING",
         url: "https://www.twitch.tv/ninja"})
             .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
