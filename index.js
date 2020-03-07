@@ -31,7 +31,7 @@ client.on("ready", () => {
 
 
 client.on("message", async message => {
-    const prefix = ".";
+    const prefix = "l!";
 
     if (message.author.bot) return;
     if (!message.guild) return;
